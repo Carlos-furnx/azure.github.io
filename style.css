@@ -1,0 +1,106 @@
+/* Estilo para Repositorio BD2 */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+header {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  padding: 2.5rem 0;
+  text-align: center;
+  border-bottom: 4px solid #4338ca;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.semana {
+  background-color: white;
+  border-radius: 1rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.semana:hover {
+  transform: translateY(-4px);
+}
+
+.semana-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #e2e8f0;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.contenedor-tareas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.tarjeta {
+  background-color: #f1f5f9;
+  border-radius: 0.8rem;
+  padding: 1.2rem;
+  box-shadow: inset 0 0 0 2px #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: background 0.3s ease;
+}
+
+.tarjeta:hover {
+  background-color: #e0f2fe;
+}
+
+.tarjeta h3 {
+  margin-top: 0;
+  color: #0f172a;
+  font-size: 1.2rem;
+}
+
+.tarjeta a {
+  text-decoration: none;
+  color: #3b82f6;
+  font-weight: 500;
+  background-color: #e0f2fe;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.tarjeta a:hover {
+  background-color: #bae6fd;
+  transform: translateX(5px);
+}
+
+footer {
+  text-align: center;
+  padding: 1.2rem;
+  background-color: #f1f5f9;
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-top: 3rem;
+  border-top: 1px solid #e2e8f0;
+}
